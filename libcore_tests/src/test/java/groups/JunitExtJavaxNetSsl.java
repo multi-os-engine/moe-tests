@@ -1,0 +1,61 @@
+import libcore.io.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+
+    libcore.javax.net.ssl.DistinguishedNameParserTest.class,
+    libcore.javax.net.ssl.KeyManagerFactoryTest.class,
+    libcore.javax.net.ssl.KeyStoreBuilderParametersTest.class,
+    libcore.javax.net.ssl.SSLContextTest.class,
+    libcore.javax.net.ssl.SSLParametersTest.class,
+    libcore.javax.net.ssl.SSLServerSocketFactoryTest.class,
+    libcore.javax.net.ssl.SSLServerSocketTest.class,
+    libcore.javax.net.ssl.SSLSessionContextTest.class,
+    libcore.javax.net.ssl.SSLSessionTest.class,
+    libcore.javax.net.ssl.SSLSocketFactoryTest.class,
+    libcore.javax.net.ssl.TrustManagerFactoryTest.class,
+    libcore.javax.net.ssl.X509KeyManagerTest.class,
+    libcore.javax.net.ssl.DefaultHostnameVerifierTest.class,
+    libcore.javax.net.ssl.SSLSocketTest.class,
+    libcore.javax.net.ssl.SSLEngineTest.class,
+    libcore.javax.net.ssl.HttpsURLConnectionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.CertPathTrustManagerParametersTest.class,
+    org.apache.harmony.tests.javax.net.ssl.HostnameVerifierTest.class,
+    org.apache.harmony.tests.javax.net.ssl.HttpsURLConnectionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.KeyManagerFactory1Test.class,
+    org.apache.harmony.tests.javax.net.ssl.KeyManagerFactory2Test.class,
+    org.apache.harmony.tests.javax.net.ssl.KeyManagerFactorySpiTest.class,
+    org.apache.harmony.tests.javax.net.ssl.KeyStoreBuilderParametersTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLContext1Test.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLContext2Test.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLContextSpiTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLEngineResultHandshakeStatusTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLEngineResultStatusTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLEngineResultTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLEngineTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLExceptionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLHandshakeExceptionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLKeyExceptionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLPeerUnverifiedExceptionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLProtocolExceptionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLServerSocketFactoryTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLServerSocketTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSessionBindingEventTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSessionBindingListenerTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSessionContextTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSessionTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSocketFactoryTest.class,
+    org.apache.harmony.tests.javax.net.ssl.SSLSocketTest.class,
+    org.apache.harmony.tests.javax.net.ssl.TrustManagerFactory1Test.class,
+    org.apache.harmony.tests.javax.net.ssl.TrustManagerFactory2Test.class,
+    org.apache.harmony.tests.javax.net.ssl.TrustManagerFactorySpiTest.class,
+    org.apache.harmony.tests.javax.net.ssl.X509ExtendedKeyManagerTest.class,
+    org.apache.harmony.tests.javax.net.ssl.X509KeyManagerTest.class,
+    org.apache.harmony.tests.javax.net.ssl.X509TrustManagerTest.class,
+    org.apache.harmony.tests.javax.net.ssl.HandshakeCompletedEventTest.class, 
+
+})
+public class JunitExtJavaxNetSsl {
+} 

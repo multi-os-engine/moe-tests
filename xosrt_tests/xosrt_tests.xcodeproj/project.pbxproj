@@ -1,0 +1,1012 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023C965B2082DBC4D8F3B4AF /* classlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = EAA6D77659256E68D9AF065D /* classlist.txt */; };
+		2701396001B41FF351AE928C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2148C518EF21AAEB9828AAA4 /* main.cpp */; };
+		405F761D1B68DB6100D3658D /* balloons.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F761C1B68DB6100D3658D /* balloons.png */; };
+		405F76271B68DB8000D3658D /* hamster1.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F761E1B68DB8000D3658D /* hamster1.png */; };
+		405F76281B68DB8000D3658D /* hamster2.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F761F1B68DB8000D3658D /* hamster2.png */; };
+		405F76291B68DB8000D3658D /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 405F76201B68DB8000D3658D /* images.jpeg */; };
+		405F762A1B68DB8000D3658D /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 405F76211B68DB8000D3658D /* logo.jpeg */; };
+		405F762B1B68DB8000D3658D /* testImage0.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76221B68DB8000D3658D /* testImage0.png */; };
+		405F762C1B68DB8000D3658D /* testImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76231B68DB8000D3658D /* testImage1.png */; };
+		405F762D1B68DB8000D3658D /* testImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76241B68DB8000D3658D /* testImage2.png */; };
+		405F762E1B68DB8000D3658D /* testImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76251B68DB8000D3658D /* testImage3.png */; };
+		405F762F1B68DB8000D3658D /* testImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76261B68DB8000D3658D /* testImage4.png */; };
+		405F76311B68DB9400D3658D /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 405F76301B68DB9400D3658D /* second.png */; };
+		405F76331B68DBA200D3658D /* animImg in Resources */ = {isa = PBXBuildFile; fileRef = 405F76321B68DBA200D3658D /* animImg */; };
+		5F47CB77ADEF3251416C7603 /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D1CD68D5408C9014C13B8D /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		653F2CC438677182BD30ECD5 /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = F826CADFE66E0940CB3F7C95 /* application.jar */; };
+		89848E272340888E1A2E34DB /* MOE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 25D1CD68D5408C9014C13B8D /* MOE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C01A9A8054E8F96B041B722 /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = ECFE152E181D487CBC2973C3 /* preregister.txt */; };
+		A7562A03F23077373F268456 /* preregister.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3274CAB498D3FA257CCF8E59 /* preregister.txt */; };
+		B0E0F5C9B40DAF46AA2979BD /* application.jar in Resources */ = {isa = PBXBuildFile; fileRef = 42F3E446B8D2D43B6FC475DA /* application.jar */; };
+		C6B0EA78D8C83ECCC3733254 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D1CD68D5408C9014C13B8D /* MOE.framework */; };
+		D20DF6A213224D46561D8481 /* MOE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D1CD68D5408C9014C13B8D /* MOE.framework */; };
+		EEBF0A91B35868FB60C359F9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2148C518EF21AAEB9828AAA4 /* main.cpp */; };
+		FD46E5F71B7E227200A983EE /* ButtonLabel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F41B7E227200A983EE /* ButtonLabel1ViewController.xib */; };
+		FD46E5F81B7E227200A983EE /* ButtonLabel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F41B7E227200A983EE /* ButtonLabel1ViewController.xib */; };
+		FD46E5F91B7E227200A983EE /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F51B7E227200A983EE /* WebView.xib */; };
+		FD46E5FA1B7E227200A983EE /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F51B7E227200A983EE /* WebView.xib */; };
+		FD46E5FB1B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F61B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib */; };
+		FD46E5FC1B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5F61B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib */; };
+		FD46E6021B8361AD00A983EE /* XIBTestAwake0ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FD1B8361AD00A983EE /* XIBTestAwake0ViewController.xib */; };
+		FD46E6031B8361AD00A983EE /* XIBTestAwake0ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FD1B8361AD00A983EE /* XIBTestAwake0ViewController.xib */; };
+		FD46E6041B8361AD00A983EE /* XIBTestAwake1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FE1B8361AD00A983EE /* XIBTestAwake1ViewController.xib */; };
+		FD46E6051B8361AD00A983EE /* XIBTestAwake1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FE1B8361AD00A983EE /* XIBTestAwake1ViewController.xib */; };
+		FD46E6061B8361AD00A983EE /* XIBTestAwake2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FF1B8361AD00A983EE /* XIBTestAwake2ViewController.xib */; };
+		FD46E6071B8361AD00A983EE /* XIBTestAwake2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E5FF1B8361AD00A983EE /* XIBTestAwake2ViewController.xib */; };
+		FD46E6081B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6001B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib */; };
+		FD46E6091B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6001B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib */; };
+		FD46E60A1B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6011B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib */; };
+		FD46E60B1B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6011B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib */; };
+		FD46E60D1B836DFB00A983EE /* XIBTestButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E60C1B836DFB00A983EE /* XIBTestButtonViewController.xib */; };
+		FD46E60E1B836DFB00A983EE /* XIBTestButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E60C1B836DFB00A983EE /* XIBTestButtonViewController.xib */; };
+		FD46E6101B836EF900A983EE /* XIBTestDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E60F1B836EF900A983EE /* XIBTestDatePickerViewController.xib */; };
+		FD46E6111B836EF900A983EE /* XIBTestDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E60F1B836EF900A983EE /* XIBTestDatePickerViewController.xib */; };
+		FD46E6131B83734200A983EE /* XIBTestDrawRectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6121B83734200A983EE /* XIBTestDrawRectViewController.xib */; };
+		FD46E6141B83734200A983EE /* XIBTestDrawRectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6121B83734200A983EE /* XIBTestDrawRectViewController.xib */; };
+		FD46E6161B8375E000A983EE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6151B8375E000A983EE /* logo.jpg */; };
+		FD46E6171B8375E000A983EE /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6151B8375E000A983EE /* logo.jpg */; };
+		FD46E6191B837D6500A983EE /* XIBTestImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6181B837D6500A983EE /* XIBTestImageViewController.xib */; };
+		FD46E61A1B837D6500A983EE /* XIBTestImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6181B837D6500A983EE /* XIBTestImageViewController.xib */; };
+		FD46E61C1B837D6F00A983EE /* images2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E61B1B837D6F00A983EE /* images2.jpeg */; };
+		FD46E61D1B837D6F00A983EE /* images2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E61B1B837D6F00A983EE /* images2.jpeg */; };
+		FD46E61F1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E61E1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib */; };
+		FD46E6201B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E61E1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib */; };
+		FD46E6221B83853800A983EE /* XIBTestLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6211B83853800A983EE /* XIBTestLabelViewController.xib */; };
+		FD46E6231B83853800A983EE /* XIBTestLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6211B83853800A983EE /* XIBTestLabelViewController.xib */; };
+		FD46E6251B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6241B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib */; };
+		FD46E6261B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6241B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib */; };
+		FD46E62B1B838FDF00A983EE /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6271B838FDF00A983EE /* DetailViewController_iPad.xib */; };
+		FD46E62C1B838FDF00A983EE /* DetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6271B838FDF00A983EE /* DetailViewController_iPad.xib */; };
+		FD46E62D1B838FDF00A983EE /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6281B838FDF00A983EE /* DetailViewController_iPhone.xib */; };
+		FD46E62E1B838FDF00A983EE /* DetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6281B838FDF00A983EE /* DetailViewController_iPhone.xib */; };
+		FD46E62F1B838FDF00A983EE /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6291B838FDF00A983EE /* MasterViewController_iPad.xib */; };
+		FD46E6301B838FDF00A983EE /* MasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6291B838FDF00A983EE /* MasterViewController_iPad.xib */; };
+		FD46E6311B838FDF00A983EE /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E62A1B838FDF00A983EE /* MasterViewController_iPhone.xib */; };
+		FD46E6321B838FDF00A983EE /* MasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E62A1B838FDF00A983EE /* MasterViewController_iPhone.xib */; };
+		FD46E6341B847E5E00A983EE /* XIBTestNavigationBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6331B847E5E00A983EE /* XIBTestNavigationBarViewController.xib */; };
+		FD46E6351B847E5E00A983EE /* XIBTestNavigationBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6331B847E5E00A983EE /* XIBTestNavigationBarViewController.xib */; };
+		FD46E6391B84968900A983EE /* XIBTestNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6361B84968900A983EE /* XIBTestNavigationController.xib */; };
+		FD46E63A1B84968900A983EE /* XIBTestNavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6361B84968900A983EE /* XIBTestNavigationController.xib */; };
+		FD46E63B1B84968900A983EE /* XIBTestNavigationControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6371B84968900A983EE /* XIBTestNavigationControllerViewController.xib */; };
+		FD46E63C1B84968900A983EE /* XIBTestNavigationControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6371B84968900A983EE /* XIBTestNavigationControllerViewController.xib */; };
+		FD46E63D1B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6381B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib */; };
+		FD46E63E1B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6381B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib */; };
+		FD46E6401B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E63F1B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib */; };
+		FD46E6411B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E63F1B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib */; };
+		FD46E6431B84A69500A983EE /* XIBTestPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6421B84A69500A983EE /* XIBTestPageControlViewController.xib */; };
+		FD46E6441B84A69500A983EE /* XIBTestPageControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6421B84A69500A983EE /* XIBTestPageControlViewController.xib */; };
+		FD46E64A1B84A6E200A983EE /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6451B84A6E100A983EE /* image1.jpg */; };
+		FD46E64B1B84A6E200A983EE /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6451B84A6E100A983EE /* image1.jpg */; };
+		FD46E64C1B84A6E200A983EE /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6461B84A6E200A983EE /* image2.jpg */; };
+		FD46E64D1B84A6E200A983EE /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6461B84A6E200A983EE /* image2.jpg */; };
+		FD46E64E1B84A6E200A983EE /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6471B84A6E200A983EE /* image3.jpg */; };
+		FD46E64F1B84A6E200A983EE /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6471B84A6E200A983EE /* image3.jpg */; };
+		FD46E6501B84A6E200A983EE /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6481B84A6E200A983EE /* image4.jpg */; };
+		FD46E6511B84A6E200A983EE /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6481B84A6E200A983EE /* image4.jpg */; };
+		FD46E6521B84A6E200A983EE /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6491B84A6E200A983EE /* image5.jpg */; };
+		FD46E6531B84A6E200A983EE /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6491B84A6E200A983EE /* image5.jpg */; };
+		FD46E6551B84A7A600A983EE /* XIBTestPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6541B84A7A600A983EE /* XIBTestPageViewController.xib */; };
+		FD46E6561B84A7A600A983EE /* XIBTestPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6541B84A7A600A983EE /* XIBTestPageViewController.xib */; };
+		FD46E6581B84AE6B00A983EE /* XIBTestPickerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6571B84AE6B00A983EE /* XIBTestPickerViewViewController.xib */; };
+		FD46E6591B84AE6B00A983EE /* XIBTestPickerViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6571B84AE6B00A983EE /* XIBTestPickerViewViewController.xib */; };
+		FD46E65B1B84C20200A983EE /* XIBTestProgressViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E65A1B84C20200A983EE /* XIBTestProgressViewViewController.xib */; };
+		FD46E65C1B84C20200A983EE /* XIBTestProgressViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E65A1B84C20200A983EE /* XIBTestProgressViewViewController.xib */; };
+		FD46E65E1B84C38B00A983EE /* XIBTestPropertiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E65D1B84C38B00A983EE /* XIBTestPropertiesViewController.xib */; };
+		FD46E65F1B84C38B00A983EE /* XIBTestPropertiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E65D1B84C38B00A983EE /* XIBTestPropertiesViewController.xib */; };
+		FD46E6611B84C6DB00A983EE /* XIBTestScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6601B84C6DB00A983EE /* XIBTestScrollViewViewController.xib */; };
+		FD46E6621B84C6DB00A983EE /* XIBTestScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6601B84C6DB00A983EE /* XIBTestScrollViewViewController.xib */; };
+		FD46E6641B84C83200A983EE /* XIBTestSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6631B84C83200A983EE /* XIBTestSearchViewController.xib */; };
+		FD46E6651B84C83200A983EE /* XIBTestSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6631B84C83200A983EE /* XIBTestSearchViewController.xib */; };
+		FD46E6671B84C94000A983EE /* XIBTestSegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6661B84C94000A983EE /* XIBTestSegmentedControlViewController.xib */; };
+		FD46E6681B84C94000A983EE /* XIBTestSegmentedControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6661B84C94000A983EE /* XIBTestSegmentedControlViewController.xib */; };
+		FD46E66A1B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6691B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib */; };
+		FD46E66B1B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6691B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib */; };
+		FD46E66E1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E66C1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib */; };
+		FD46E66F1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E66C1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib */; };
+		FD46E6701B84CC1F00A983EE /* XIBTestSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E66D1B84CC1F00A983EE /* XIBTestSliderViewController.xib */; };
+		FD46E6711B84CC1F00A983EE /* XIBTestSliderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E66D1B84CC1F00A983EE /* XIBTestSliderViewController.xib */; };
+		FD46E6731B84CCE500A983EE /* XIBTestSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6721B84CCE500A983EE /* XIBTestSwitchViewController.xib */; };
+		FD46E6741B84CCE500A983EE /* XIBTestSwitchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6721B84CCE500A983EE /* XIBTestSwitchViewController.xib */; };
+		FD46E6781B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6751B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib */; };
+		FD46E6791B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6751B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib */; };
+		FD46E67A1B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6761B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib */; };
+		FD46E67B1B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6761B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib */; };
+		FD46E67C1B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6771B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib */; };
+		FD46E67D1B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6771B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib */; };
+		FD46E67F1B84D37E00A983EE /* XIBTestTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E67E1B84D37D00A983EE /* XIBTestTabBarViewController.xib */; };
+		FD46E6801B84D37E00A983EE /* XIBTestTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E67E1B84D37D00A983EE /* XIBTestTabBarViewController.xib */; };
+		FD46E6821B84D39E00A983EE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6811B84D39E00A983EE /* first.png */; };
+		FD46E6831B84D39E00A983EE /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6811B84D39E00A983EE /* first.png */; };
+		FD46E6881B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6841B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib */; };
+		FD46E6891B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6841B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib */; };
+		FD46E68A1B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6851B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib */; };
+		FD46E68B1B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6851B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib */; };
+		FD46E68C1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6861B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib */; };
+		FD46E68D1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6861B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib */; };
+		FD46E68E1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6871B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib */; };
+		FD46E68F1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6871B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib */; };
+		FD46E6921B84DB8300A983EE /* TableViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6901B84DB8300A983EE /* TableViewCellController.xib */; };
+		FD46E6931B84DB8300A983EE /* TableViewCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6901B84DB8300A983EE /* TableViewCellController.xib */; };
+		FD46E6941B84DB8300A983EE /* XIBTestTableViewCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6911B84DB8300A983EE /* XIBTestTableViewCellViewController.xib */; };
+		FD46E6951B84DB8300A983EE /* XIBTestTableViewCellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6911B84DB8300A983EE /* XIBTestTableViewCellViewController.xib */; };
+		FD46E6981B84DEF300A983EE /* XIBTestTableViewController2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6961B84DEF300A983EE /* XIBTestTableViewController2Window.xib */; };
+		FD46E6991B84DEF300A983EE /* XIBTestTableViewController2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6961B84DEF300A983EE /* XIBTestTableViewController2Window.xib */; };
+		FD46E69A1B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6971B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib */; };
+		FD46E69B1B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6971B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib */; };
+		FD46E69D1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E69C1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib */; };
+		FD46E69E1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E69C1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib */; };
+		FD46E6A01B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E69F1B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib */; };
+		FD46E6A11B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E69F1B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib */; };
+		FD46E6A31B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A21B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib */; };
+		FD46E6A41B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A21B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib */; };
+		FD46E6A61B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A51B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib */; };
+		FD46E6A71B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A51B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib */; };
+		FD46E6A91B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A81B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib */; };
+		FD46E6AA1B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6A81B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib */; };
+		FD46E6AC1B85CB9B00A983EE /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6AB1B85CB9B00A983EE /* download.jpeg */; };
+		FD46E6AD1B85CB9B00A983EE /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6AB1B85CB9B00A983EE /* download.jpeg */; };
+		FD46E6AF1B85D12000A983EE /* XIBTestTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6AE1B85D12000A983EE /* XIBTestTableViewViewController.xib */; };
+		FD46E6B01B85D12000A983EE /* XIBTestTableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6AE1B85D12000A983EE /* XIBTestTableViewViewController.xib */; };
+		FD46E6B31B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B11B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib */; };
+		FD46E6B41B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B11B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib */; };
+		FD46E6B51B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B21B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib */; };
+		FD46E6B61B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B21B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib */; };
+		FD46E6B91B85DBE300A983EE /* XIBTestTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B71B85DBE300A983EE /* XIBTestTextFieldViewController.xib */; };
+		FD46E6BA1B85DBE300A983EE /* XIBTestTextFieldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B71B85DBE300A983EE /* XIBTestTextFieldViewController.xib */; };
+		FD46E6BB1B85DBE300A983EE /* XIBTestTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B81B85DBE300A983EE /* XIBTestTextViewViewController.xib */; };
+		FD46E6BC1B85DBE300A983EE /* XIBTestTextViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6B81B85DBE300A983EE /* XIBTestTextViewViewController.xib */; };
+		FD46E6BE1B85E73200A983EE /* XIBTestToolBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6BD1B85E73200A983EE /* XIBTestToolBarViewController.xib */; };
+		FD46E6BF1B85E73200A983EE /* XIBTestToolBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6BD1B85E73200A983EE /* XIBTestToolBarViewController.xib */; };
+		FD46E6C21B85EBCC00A983EE /* XIBTestUserViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C01B85EBCC00A983EE /* XIBTestUserViewViewController.xib */; };
+		FD46E6C31B85EBCC00A983EE /* XIBTestUserViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C01B85EBCC00A983EE /* XIBTestUserViewViewController.xib */; };
+		FD46E6C41B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C11B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib */; };
+		FD46E6C51B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C11B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib */; };
+		FD46E6C81B85EF0900A983EE /* XIBTestViewController2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C61B85EF0900A983EE /* XIBTestViewController2Window.xib */; };
+		FD46E6C91B85EF0900A983EE /* XIBTestViewController2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C61B85EF0900A983EE /* XIBTestViewController2Window.xib */; };
+		FD46E6CA1B85EF0900A983EE /* XIBTestViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C71B85EF0900A983EE /* XIBTestViewControllerViewController.xib */; };
+		FD46E6CB1B85EF0900A983EE /* XIBTestViewControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6C71B85EF0900A983EE /* XIBTestViewControllerViewController.xib */; };
+		FD46E6CD1B85F1B500A983EE /* XIBTestViewControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6CC1B85F1B500A983EE /* XIBTestViewControllerWindow.xib */; };
+		FD46E6CE1B85F1B500A983EE /* XIBTestViewControllerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6CC1B85F1B500A983EE /* XIBTestViewControllerWindow.xib */; };
+		FD46E6D21B85F36700A983EE /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6CF1B85F36700A983EE /* ViewController0.xib */; };
+		FD46E6D31B85F36700A983EE /* ViewController0.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6CF1B85F36700A983EE /* ViewController0.xib */; };
+		FD46E6D41B85F36700A983EE /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D01B85F36700A983EE /* ViewController1.xib */; };
+		FD46E6D51B85F36700A983EE /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D01B85F36700A983EE /* ViewController1.xib */; };
+		FD46E6D61B85F36700A983EE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D11B85F36700A983EE /* ViewController2.xib */; };
+		FD46E6D71B85F36700A983EE /* ViewController2.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D11B85F36700A983EE /* ViewController2.xib */; };
+		FD46E6D91B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D81B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib */; };
+		FD46E6DA1B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6D81B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib */; };
+		FD46E6DC1B86206F00A983EE /* htmlExample.html in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6DB1B86206F00A983EE /* htmlExample.html */; };
+		FD46E6DD1B86206F00A983EE /* htmlExample.html in Resources */ = {isa = PBXBuildFile; fileRef = FD46E6DB1B86206F00A983EE /* htmlExample.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4144D22383E406FDF64B2C82 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5F47CB77ADEF3251416C7603 /* MOE.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		475A2431ED769DE55CC2D6DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				89848E272340888E1A2E34DB /* MOE.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0200CB48CD0D2E4BBBA36F5A /* xosrt_tests-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xosrt_tests-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F0E29661FA484DEF20BA18 /* Info-Test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Test.plist"; sourceTree = "<group>"; };
+		2148C518EF21AAEB9828AAA4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25D1CD68D5408C9014C13B8D /* MOE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOE.framework; path = build/moe/runtime/iphoneos/MOE.framework; sourceTree = SOURCE_ROOT; };
+		2930400E89A7C4645E290885 /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		3274CAB498D3FA257CCF8E59 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = preregister.txt; path = build/moe/test/preregister.txt; sourceTree = SOURCE_ROOT; };
+		405F761C1B68DB6100D3658D /* balloons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloons.png; sourceTree = "<group>"; };
+		405F761E1B68DB8000D3658D /* hamster1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamster1.png; sourceTree = "<group>"; };
+		405F761F1B68DB8000D3658D /* hamster2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamster2.png; sourceTree = "<group>"; };
+		405F76201B68DB8000D3658D /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		405F76211B68DB8000D3658D /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpeg; sourceTree = "<group>"; };
+		405F76221B68DB8000D3658D /* testImage0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage0.png; sourceTree = "<group>"; };
+		405F76231B68DB8000D3658D /* testImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage1.png; sourceTree = "<group>"; };
+		405F76241B68DB8000D3658D /* testImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage2.png; sourceTree = "<group>"; };
+		405F76251B68DB8000D3658D /* testImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage3.png; sourceTree = "<group>"; };
+		405F76261B68DB8000D3658D /* testImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage4.png; sourceTree = "<group>"; };
+		405F76301B68DB9400D3658D /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		405F76321B68DBA200D3658D /* animImg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = animImg; sourceTree = "<group>"; };
+		42F3E446B8D2D43B6FC475DA /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = build/moe/main/application.jar; sourceTree = SOURCE_ROOT; };
+		83C4EA1E73EA7006FCE5B6AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DE6C58AE7C93E720DE393B /* build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		C8F00FDA3F713FEFD47A6ECA /* xosrt_tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xosrt_tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA6D77659256E68D9AF065D /* classlist.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = classlist.txt; path = build/moe/test/classlist.txt; sourceTree = SOURCE_ROOT; };
+		ECFE152E181D487CBC2973C3 /* preregister.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = preregister.txt; path = build/moe/main/preregister.txt; sourceTree = SOURCE_ROOT; };
+		F826CADFE66E0940CB3F7C95 /* application.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = application.jar; path = build/moe/test/application.jar; sourceTree = SOURCE_ROOT; };
+		FD46E5F41B7E227200A983EE /* ButtonLabel1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonLabel1ViewController.xib; sourceTree = "<group>"; };
+		FD46E5F51B7E227200A983EE /* WebView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		FD46E5F61B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestActivityIndicatorViewController.xib; sourceTree = "<group>"; };
+		FD46E5FD1B8361AD00A983EE /* XIBTestAwake0ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestAwake0ViewController.xib; sourceTree = "<group>"; };
+		FD46E5FE1B8361AD00A983EE /* XIBTestAwake1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestAwake1ViewController.xib; sourceTree = "<group>"; };
+		FD46E5FF1B8361AD00A983EE /* XIBTestAwake2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestAwake2ViewController.xib; sourceTree = "<group>"; };
+		FD46E6001B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestButtonLabel2ViewController.xib; sourceTree = "<group>"; };
+		FD46E6011B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestButtonLabelDelegateViewController.xib; sourceTree = "<group>"; };
+		FD46E60C1B836DFB00A983EE /* XIBTestButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestButtonViewController.xib; sourceTree = "<group>"; };
+		FD46E60F1B836EF900A983EE /* XIBTestDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestDatePickerViewController.xib; sourceTree = "<group>"; };
+		FD46E6121B83734200A983EE /* XIBTestDrawRectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestDrawRectViewController.xib; sourceTree = "<group>"; };
+		FD46E6151B8375E000A983EE /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
+		FD46E6181B837D6500A983EE /* XIBTestImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestImageViewController.xib; sourceTree = "<group>"; };
+		FD46E61B1B837D6F00A983EE /* images2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images2.jpeg; sourceTree = "<group>"; };
+		FD46E61E1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestLabelDefaultValuesViewController.xib; sourceTree = "<group>"; };
+		FD46E6211B83853800A983EE /* XIBTestLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestLabelViewController.xib; sourceTree = "<group>"; };
+		FD46E6241B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestMainInterfaceViewController.xib; sourceTree = "<group>"; };
+		FD46E6271B838FDF00A983EE /* DetailViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPad.xib; sourceTree = "<group>"; };
+		FD46E6281B838FDF00A983EE /* DetailViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6291B838FDF00A983EE /* MasterViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController_iPad.xib; sourceTree = "<group>"; };
+		FD46E62A1B838FDF00A983EE /* MasterViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6331B847E5E00A983EE /* XIBTestNavigationBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestNavigationBarViewController.xib; sourceTree = "<group>"; };
+		FD46E6361B84968900A983EE /* XIBTestNavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestNavigationController.xib; sourceTree = "<group>"; };
+		FD46E6371B84968900A983EE /* XIBTestNavigationControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestNavigationControllerViewController.xib; sourceTree = "<group>"; };
+		FD46E6381B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestNavigationControllerViewTwoController.xib; sourceTree = "<group>"; };
+		FD46E63F1B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestNotRGBAColorViewController.xib; sourceTree = "<group>"; };
+		FD46E6421B84A69500A983EE /* XIBTestPageControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestPageControlViewController.xib; sourceTree = "<group>"; };
+		FD46E6451B84A6E100A983EE /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		FD46E6461B84A6E200A983EE /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		FD46E6471B84A6E200A983EE /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		FD46E6481B84A6E200A983EE /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		FD46E6491B84A6E200A983EE /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		FD46E6541B84A7A600A983EE /* XIBTestPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestPageViewController.xib; sourceTree = "<group>"; };
+		FD46E6571B84AE6B00A983EE /* XIBTestPickerViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestPickerViewViewController.xib; sourceTree = "<group>"; };
+		FD46E65A1B84C20200A983EE /* XIBTestProgressViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestProgressViewViewController.xib; sourceTree = "<group>"; };
+		FD46E65D1B84C38B00A983EE /* XIBTestPropertiesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestPropertiesViewController.xib; sourceTree = "<group>"; };
+		FD46E6601B84C6DB00A983EE /* XIBTestScrollViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestScrollViewViewController.xib; sourceTree = "<group>"; };
+		FD46E6631B84C83200A983EE /* XIBTestSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSearchViewController.xib; sourceTree = "<group>"; };
+		FD46E6661B84C94000A983EE /* XIBTestSegmentedControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSegmentedControlViewController.xib; sourceTree = "<group>"; };
+		FD46E6691B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSingleViewAppViewController.xib; sourceTree = "<group>"; };
+		FD46E66C1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSlider_1ViewController.xib; sourceTree = "<group>"; };
+		FD46E66D1B84CC1F00A983EE /* XIBTestSliderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSliderViewController.xib; sourceTree = "<group>"; };
+		FD46E6721B84CCE500A983EE /* XIBTestSwitchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestSwitchViewController.xib; sourceTree = "<group>"; };
+		FD46E6751B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabBarController0ViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6761B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabBarControllerViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6771B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabBarControllerWindow.xib; sourceTree = "<group>"; };
+		FD46E67E1B84D37D00A983EE /* XIBTestTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabBarViewController.xib; sourceTree = "<group>"; };
+		FD46E6811B84D39E00A983EE /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		FD46E6841B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabbedAppFirstViewController_iPad.xib; sourceTree = "<group>"; };
+		FD46E6851B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabbedAppFirstViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6861B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabbedAppSecondViewController_iPad.xib; sourceTree = "<group>"; };
+		FD46E6871B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTabbedAppSecondViewController_iPhone.xib; sourceTree = "<group>"; };
+		FD46E6901B84DB8300A983EE /* TableViewCellController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellController.xib; sourceTree = "<group>"; };
+		FD46E6911B84DB8300A983EE /* XIBTestTableViewCellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewCellViewController.xib; sourceTree = "<group>"; };
+		FD46E6961B84DEF300A983EE /* XIBTestTableViewController2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewController2Window.xib; sourceTree = "<group>"; };
+		FD46E6971B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewControllerViewController.xib; sourceTree = "<group>"; };
+		FD46E69C1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewControllerWindow.xib; sourceTree = "<group>"; };
+		FD46E69F1B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewLabelViewController.xib; sourceTree = "<group>"; };
+		FD46E6A21B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewLabelTexFieldViewController.xib; sourceTree = "<group>"; };
+		FD46E6A51B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewLabelTexFieldUIImageViewController.xib; sourceTree = "<group>"; };
+		FD46E6A81B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewSearchBarViewController.xib; sourceTree = "<group>"; };
+		FD46E6AB1B85CB9B00A983EE /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = download.jpeg; sourceTree = "<group>"; };
+		FD46E6AE1B85D12000A983EE /* XIBTestTableViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewViewController.xib; sourceTree = "<group>"; };
+		FD46E6B11B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewSearchBarNavigationController2ViewController.xib; sourceTree = "<group>"; };
+		FD46E6B21B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTableViewSearchBarNavigationControllerViewController.xib; sourceTree = "<group>"; };
+		FD46E6B71B85DBE300A983EE /* XIBTestTextFieldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTextFieldViewController.xib; sourceTree = "<group>"; };
+		FD46E6B81B85DBE300A983EE /* XIBTestTextViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestTextViewViewController.xib; sourceTree = "<group>"; };
+		FD46E6BD1B85E73200A983EE /* XIBTestToolBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestToolBarViewController.xib; sourceTree = "<group>"; };
+		FD46E6C01B85EBCC00A983EE /* XIBTestUserViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestUserViewViewController.xib; sourceTree = "<group>"; };
+		FD46E6C11B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestViewColorBlueViewController.xib; sourceTree = "<group>"; };
+		FD46E6C61B85EF0900A983EE /* XIBTestViewController2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestViewController2Window.xib; sourceTree = "<group>"; };
+		FD46E6C71B85EF0900A983EE /* XIBTestViewControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestViewControllerViewController.xib; sourceTree = "<group>"; };
+		FD46E6CC1B85F1B500A983EE /* XIBTestViewControllerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestViewControllerWindow.xib; sourceTree = "<group>"; };
+		FD46E6CF1B85F36700A983EE /* ViewController0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController0.xib; sourceTree = "<group>"; };
+		FD46E6D01B85F36700A983EE /* ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController1.xib; sourceTree = "<group>"; };
+		FD46E6D11B85F36700A983EE /* ViewController2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
+		FD46E6D81B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XIBTestButtonLabel1ViewController.xib; sourceTree = "<group>"; };
+		FD46E6DB1B86206F00A983EE /* htmlExample.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = htmlExample.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		270B5681D1621836D81232BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20DF6A213224D46561D8481 /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77992FC9C2C64203D9E95EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B0EA78D8C83ECCC3733254 /* MOE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		247109A8790E55E5298850AB /* xosrt_tests-Test */ = {
+			isa = PBXGroup;
+			children = (
+				405F761B1B68DB3D00D3658D /* Resources */,
+				C5E662BEBC4742A4821F3F7F /* Supporting Files */,
+			);
+			path = "xosrt_tests-Test";
+			sourceTree = "<group>";
+		};
+		3226998048A960E392704C58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8F00FDA3F713FEFD47A6ECA /* xosrt_tests.app */,
+				0200CB48CD0D2E4BBBA36F5A /* xosrt_tests-Test.app */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		405F761B1B68DB3D00D3658D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD46E6DB1B86206F00A983EE /* htmlExample.html */,
+				FD46E6AB1B85CB9B00A983EE /* download.jpeg */,
+				FD46E6811B84D39E00A983EE /* first.png */,
+				FD46E6451B84A6E100A983EE /* image1.jpg */,
+				FD46E6461B84A6E200A983EE /* image2.jpg */,
+				FD46E6471B84A6E200A983EE /* image3.jpg */,
+				FD46E6481B84A6E200A983EE /* image4.jpg */,
+				FD46E6491B84A6E200A983EE /* image5.jpg */,
+				FD46E61B1B837D6F00A983EE /* images2.jpeg */,
+				FD46E6151B8375E000A983EE /* logo.jpg */,
+				405F76321B68DBA200D3658D /* animImg */,
+				405F761C1B68DB6100D3658D /* balloons.png */,
+				405F761E1B68DB8000D3658D /* hamster1.png */,
+				405F761F1B68DB8000D3658D /* hamster2.png */,
+				405F76301B68DB9400D3658D /* second.png */,
+				405F76201B68DB8000D3658D /* images.jpeg */,
+				405F76211B68DB8000D3658D /* logo.jpeg */,
+				405F76221B68DB8000D3658D /* testImage0.png */,
+				405F76231B68DB8000D3658D /* testImage1.png */,
+				405F76241B68DB8000D3658D /* testImage2.png */,
+				405F76251B68DB8000D3658D /* testImage3.png */,
+				405F76261B68DB8000D3658D /* testImage4.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A2B2674AC92A02EC8A31D7D5 /* xosrt_tests */ = {
+			isa = PBXGroup;
+			children = (
+				B5C2D035FF099EAC784F2C47 /* Supporting Files */,
+			);
+			path = xosrt_tests;
+			sourceTree = "<group>";
+		};
+		A2D921DC187C4234F3181E1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25D1CD68D5408C9014C13B8D /* MOE.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5C2D035FF099EAC784F2C47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2148C518EF21AAEB9828AAA4 /* main.cpp */,
+				A0DE6C58AE7C93E720DE393B /* build.xcconfig */,
+				83C4EA1E73EA7006FCE5B6AC /* Info.plist */,
+				ECFE152E181D487CBC2973C3 /* preregister.txt */,
+				42F3E446B8D2D43B6FC475DA /* application.jar */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B76840D629A22158A1A9E346 = {
+			isa = PBXGroup;
+			children = (
+				FD46E5F31B7E227200A983EE /* xib */,
+				A2B2674AC92A02EC8A31D7D5 /* xosrt_tests */,
+				247109A8790E55E5298850AB /* xosrt_tests-Test */,
+				A2D921DC187C4234F3181E1F /* Frameworks */,
+				3226998048A960E392704C58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5E662BEBC4742A4821F3F7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2930400E89A7C4645E290885 /* build.xcconfig */,
+				15F0E29661FA484DEF20BA18 /* Info-Test.plist */,
+				3274CAB498D3FA257CCF8E59 /* preregister.txt */,
+				F826CADFE66E0940CB3F7C95 /* application.jar */,
+				EAA6D77659256E68D9AF065D /* classlist.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD46E5F31B7E227200A983EE /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				FD46E6D81B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib */,
+				FD46E6CF1B85F36700A983EE /* ViewController0.xib */,
+				FD46E6D01B85F36700A983EE /* ViewController1.xib */,
+				FD46E6D11B85F36700A983EE /* ViewController2.xib */,
+				FD46E6CC1B85F1B500A983EE /* XIBTestViewControllerWindow.xib */,
+				FD46E6C61B85EF0900A983EE /* XIBTestViewController2Window.xib */,
+				FD46E6C71B85EF0900A983EE /* XIBTestViewControllerViewController.xib */,
+				FD46E6C01B85EBCC00A983EE /* XIBTestUserViewViewController.xib */,
+				FD46E6C11B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib */,
+				FD46E6BD1B85E73200A983EE /* XIBTestToolBarViewController.xib */,
+				FD46E6B71B85DBE300A983EE /* XIBTestTextFieldViewController.xib */,
+				FD46E6B81B85DBE300A983EE /* XIBTestTextViewViewController.xib */,
+				FD46E6B11B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib */,
+				FD46E6B21B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib */,
+				FD46E6AE1B85D12000A983EE /* XIBTestTableViewViewController.xib */,
+				FD46E6A81B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib */,
+				FD46E6A51B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib */,
+				FD46E6A21B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib */,
+				FD46E69F1B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib */,
+				FD46E6961B84DEF300A983EE /* XIBTestTableViewController2Window.xib */,
+				FD46E69C1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib */,
+				FD46E6971B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib */,
+				FD46E6901B84DB8300A983EE /* TableViewCellController.xib */,
+				FD46E6911B84DB8300A983EE /* XIBTestTableViewCellViewController.xib */,
+				FD46E6841B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib */,
+				FD46E6851B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib */,
+				FD46E6861B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib */,
+				FD46E6871B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib */,
+				FD46E67E1B84D37D00A983EE /* XIBTestTabBarViewController.xib */,
+				FD46E6751B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib */,
+				FD46E6761B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib */,
+				FD46E6771B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib */,
+				FD46E6721B84CCE500A983EE /* XIBTestSwitchViewController.xib */,
+				FD46E66C1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib */,
+				FD46E66D1B84CC1F00A983EE /* XIBTestSliderViewController.xib */,
+				FD46E6691B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib */,
+				FD46E6661B84C94000A983EE /* XIBTestSegmentedControlViewController.xib */,
+				FD46E6631B84C83200A983EE /* XIBTestSearchViewController.xib */,
+				FD46E6601B84C6DB00A983EE /* XIBTestScrollViewViewController.xib */,
+				FD46E65D1B84C38B00A983EE /* XIBTestPropertiesViewController.xib */,
+				FD46E65A1B84C20200A983EE /* XIBTestProgressViewViewController.xib */,
+				FD46E6571B84AE6B00A983EE /* XIBTestPickerViewViewController.xib */,
+				FD46E6541B84A7A600A983EE /* XIBTestPageViewController.xib */,
+				FD46E6421B84A69500A983EE /* XIBTestPageControlViewController.xib */,
+				FD46E63F1B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib */,
+				FD46E6361B84968900A983EE /* XIBTestNavigationController.xib */,
+				FD46E6371B84968900A983EE /* XIBTestNavigationControllerViewController.xib */,
+				FD46E6381B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib */,
+				FD46E6331B847E5E00A983EE /* XIBTestNavigationBarViewController.xib */,
+				FD46E6271B838FDF00A983EE /* DetailViewController_iPad.xib */,
+				FD46E6281B838FDF00A983EE /* DetailViewController_iPhone.xib */,
+				FD46E6291B838FDF00A983EE /* MasterViewController_iPad.xib */,
+				FD46E62A1B838FDF00A983EE /* MasterViewController_iPhone.xib */,
+				FD46E6241B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib */,
+				FD46E6211B83853800A983EE /* XIBTestLabelViewController.xib */,
+				FD46E61E1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib */,
+				FD46E6181B837D6500A983EE /* XIBTestImageViewController.xib */,
+				FD46E6121B83734200A983EE /* XIBTestDrawRectViewController.xib */,
+				FD46E60F1B836EF900A983EE /* XIBTestDatePickerViewController.xib */,
+				FD46E60C1B836DFB00A983EE /* XIBTestButtonViewController.xib */,
+				FD46E5FD1B8361AD00A983EE /* XIBTestAwake0ViewController.xib */,
+				FD46E5FE1B8361AD00A983EE /* XIBTestAwake1ViewController.xib */,
+				FD46E5FF1B8361AD00A983EE /* XIBTestAwake2ViewController.xib */,
+				FD46E6001B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib */,
+				FD46E6011B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib */,
+				FD46E5F41B7E227200A983EE /* ButtonLabel1ViewController.xib */,
+				FD46E5F51B7E227200A983EE /* WebView.xib */,
+				FD46E5F61B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DD05D85FB80E58060F31FB5 /* xosrt_tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1927990E3F2E3492645911 /* Build configuration list for PBXNativeTarget "xosrt_tests" */;
+			buildPhases = (
+				ED4232B93548D87BC7B2A75E /* Compile Sources (MOE) */,
+				270B5681D1621836D81232BF /* Frameworks */,
+				0E006CF955D158D01549A753 /* Resources */,
+				20DB7FB5F587A152E47498DE /* Sources */,
+				475A2431ED769DE55CC2D6DF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			name = xosrt_tests;
+			productName = xosrt_tests;
+			productReference = C8F00FDA3F713FEFD47A6ECA /* xosrt_tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E83A6505A0973E5CD1B2F67D /* xosrt_tests-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36996253E919D02C41D84792 /* Build configuration list for PBXNativeTarget "xosrt_tests-Test" */;
+			buildPhases = (
+				D8A9010F939AF3B04A856366 /* Compile Sources (MOE) */,
+				77992FC9C2C64203D9E95EDE /* Frameworks */,
+				7294FBE901620A77B1419D7B /* Resources */,
+				C4BD7C5C396B57EDE5AA25D3 /* Sources */,
+				4144D22383E406FDF64B2C82 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			name = "xosrt_tests-Test";
+			productName = "xosrt_tests-Test";
+			productReference = 0200CB48CD0D2E4BBBA36F5A /* xosrt_tests-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DA32AD4B492B66B88432E3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = D9C0C51DE338E1F53A2A28F3 /* Build configuration list for PBXProject "xosrt_tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B76840D629A22158A1A9E346;
+			productRefGroup = 3226998048A960E392704C58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DD05D85FB80E58060F31FB5 /* xosrt_tests */,
+				E83A6505A0973E5CD1B2F67D /* xosrt_tests-Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E006CF955D158D01549A753 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46E6A31B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib in Resources */,
+				FD46E67F1B84D37E00A983EE /* XIBTestTabBarViewController.xib in Resources */,
+				FD46E6A61B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib in Resources */,
+				FD46E6551B84A7A600A983EE /* XIBTestPageViewController.xib in Resources */,
+				FD46E6DC1B86206F00A983EE /* htmlExample.html in Resources */,
+				FD46E6881B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib in Resources */,
+				FD46E60A1B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib in Resources */,
+				FD46E6A91B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib in Resources */,
+				FD46E6D41B85F36700A983EE /* ViewController1.xib in Resources */,
+				FD46E6D91B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib in Resources */,
+				FD46E68C1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib in Resources */,
+				FD46E6391B84968900A983EE /* XIBTestNavigationController.xib in Resources */,
+				FD46E62B1B838FDF00A983EE /* DetailViewController_iPad.xib in Resources */,
+				9C01A9A8054E8F96B041B722 /* preregister.txt in Resources */,
+				FD46E6D21B85F36700A983EE /* ViewController0.xib in Resources */,
+				FD46E60D1B836DFB00A983EE /* XIBTestButtonViewController.xib in Resources */,
+				FD46E6A01B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib in Resources */,
+				FD46E62F1B838FDF00A983EE /* MasterViewController_iPad.xib in Resources */,
+				FD46E6581B84AE6B00A983EE /* XIBTestPickerViewViewController.xib in Resources */,
+				FD46E6191B837D6500A983EE /* XIBTestImageViewController.xib in Resources */,
+				FD46E6921B84DB8300A983EE /* TableViewCellController.xib in Resources */,
+				FD46E65E1B84C38B00A983EE /* XIBTestPropertiesViewController.xib in Resources */,
+				FD46E62D1B838FDF00A983EE /* DetailViewController_iPhone.xib in Resources */,
+				FD46E6021B8361AD00A983EE /* XIBTestAwake0ViewController.xib in Resources */,
+				FD46E6311B838FDF00A983EE /* MasterViewController_iPhone.xib in Resources */,
+				FD46E6821B84D39E00A983EE /* first.png in Resources */,
+				FD46E68E1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib in Resources */,
+				FD46E6CD1B85F1B500A983EE /* XIBTestViewControllerWindow.xib in Resources */,
+				FD46E6161B8375E000A983EE /* logo.jpg in Resources */,
+				FD46E64A1B84A6E200A983EE /* image1.jpg in Resources */,
+				FD46E6431B84A69500A983EE /* XIBTestPageControlViewController.xib in Resources */,
+				FD46E5F91B7E227200A983EE /* WebView.xib in Resources */,
+				FD46E63B1B84968900A983EE /* XIBTestNavigationControllerViewController.xib in Resources */,
+				FD46E6781B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib in Resources */,
+				FD46E68A1B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib in Resources */,
+				FD46E6521B84A6E200A983EE /* image5.jpg in Resources */,
+				FD46E64E1B84A6E200A983EE /* image3.jpg in Resources */,
+				FD46E6C81B85EF0900A983EE /* XIBTestViewController2Window.xib in Resources */,
+				FD46E6CA1B85EF0900A983EE /* XIBTestViewControllerViewController.xib in Resources */,
+				FD46E6C21B85EBCC00A983EE /* XIBTestUserViewViewController.xib in Resources */,
+				B0E0F5C9B40DAF46AA2979BD /* application.jar in Resources */,
+				FD46E6AF1B85D12000A983EE /* XIBTestTableViewViewController.xib in Resources */,
+				FD46E6C41B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib in Resources */,
+				FD46E61C1B837D6F00A983EE /* images2.jpeg in Resources */,
+				FD46E5FB1B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib in Resources */,
+				FD46E66A1B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib in Resources */,
+				FD46E6061B8361AD00A983EE /* XIBTestAwake2ViewController.xib in Resources */,
+				FD46E69D1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib in Resources */,
+				FD46E6641B84C83200A983EE /* XIBTestSearchViewController.xib in Resources */,
+				FD46E63D1B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib in Resources */,
+				FD46E65B1B84C20200A983EE /* XIBTestProgressViewViewController.xib in Resources */,
+				FD46E6941B84DB8300A983EE /* XIBTestTableViewCellViewController.xib in Resources */,
+				FD46E5F71B7E227200A983EE /* ButtonLabel1ViewController.xib in Resources */,
+				FD46E6D61B85F36700A983EE /* ViewController2.xib in Resources */,
+				FD46E6081B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib in Resources */,
+				FD46E6501B84A6E200A983EE /* image4.jpg in Resources */,
+				FD46E6BE1B85E73200A983EE /* XIBTestToolBarViewController.xib in Resources */,
+				FD46E6401B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib in Resources */,
+				FD46E61F1B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib in Resources */,
+				FD46E67A1B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib in Resources */,
+				FD46E6731B84CCE500A983EE /* XIBTestSwitchViewController.xib in Resources */,
+				FD46E6101B836EF900A983EE /* XIBTestDatePickerViewController.xib in Resources */,
+				FD46E64C1B84A6E200A983EE /* image2.jpg in Resources */,
+				FD46E6131B83734200A983EE /* XIBTestDrawRectViewController.xib in Resources */,
+				FD46E6B51B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib in Resources */,
+				FD46E67C1B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib in Resources */,
+				FD46E6BB1B85DBE300A983EE /* XIBTestTextViewViewController.xib in Resources */,
+				FD46E6981B84DEF300A983EE /* XIBTestTableViewController2Window.xib in Resources */,
+				FD46E6251B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib in Resources */,
+				FD46E6611B84C6DB00A983EE /* XIBTestScrollViewViewController.xib in Resources */,
+				FD46E6671B84C94000A983EE /* XIBTestSegmentedControlViewController.xib in Resources */,
+				FD46E6AC1B85CB9B00A983EE /* download.jpeg in Resources */,
+				FD46E6041B8361AD00A983EE /* XIBTestAwake1ViewController.xib in Resources */,
+				FD46E6341B847E5E00A983EE /* XIBTestNavigationBarViewController.xib in Resources */,
+				FD46E69A1B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib in Resources */,
+				FD46E6701B84CC1F00A983EE /* XIBTestSliderViewController.xib in Resources */,
+				FD46E66E1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib in Resources */,
+				FD46E6B31B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib in Resources */,
+				FD46E6B91B85DBE300A983EE /* XIBTestTextFieldViewController.xib in Resources */,
+				FD46E6221B83853800A983EE /* XIBTestLabelViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7294FBE901620A77B1419D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46E65F1B84C38B00A983EE /* XIBTestPropertiesViewController.xib in Resources */,
+				405F762B1B68DB8000D3658D /* testImage0.png in Resources */,
+				FD46E63A1B84968900A983EE /* XIBTestNavigationController.xib in Resources */,
+				FD46E6111B836EF900A983EE /* XIBTestDatePickerViewController.xib in Resources */,
+				FD46E6801B84D37E00A983EE /* XIBTestTabBarViewController.xib in Resources */,
+				405F76271B68DB8000D3658D /* hamster1.png in Resources */,
+				FD46E6511B84A6E200A983EE /* image4.jpg in Resources */,
+				FD46E64B1B84A6E200A983EE /* image1.jpg in Resources */,
+				405F762F1B68DB8000D3658D /* testImage4.png in Resources */,
+				FD46E68B1B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPhone.xib in Resources */,
+				FD46E6531B84A6E200A983EE /* image5.jpg in Resources */,
+				FD46E6DD1B86206F00A983EE /* htmlExample.html in Resources */,
+				FD46E65C1B84C20200A983EE /* XIBTestProgressViewViewController.xib in Resources */,
+				FD46E6991B84DEF300A983EE /* XIBTestTableViewController2Window.xib in Resources */,
+				FD46E62E1B838FDF00A983EE /* DetailViewController_iPhone.xib in Resources */,
+				FD46E68F1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPhone.xib in Resources */,
+				FD46E61A1B837D6500A983EE /* XIBTestImageViewController.xib in Resources */,
+				FD46E6931B84DB8300A983EE /* TableViewCellController.xib in Resources */,
+				FD46E6A11B84E5FD00A983EE /* XIBTestTableViewLabelViewController.xib in Resources */,
+				FD46E6351B847E5E00A983EE /* XIBTestNavigationBarViewController.xib in Resources */,
+				405F76281B68DB8000D3658D /* hamster2.png in Resources */,
+				FD46E6AA1B85CB9200A983EE /* XIBTestTableViewSearchBarViewController.xib in Resources */,
+				FD46E6051B8361AD00A983EE /* XIBTestAwake1ViewController.xib in Resources */,
+				FD46E6CB1B85EF0900A983EE /* XIBTestViewControllerViewController.xib in Resources */,
+				FD46E6201B837F1E00A983EE /* XIBTestLabelDefaultValuesViewController.xib in Resources */,
+				FD46E6441B84A69500A983EE /* XIBTestPageControlViewController.xib in Resources */,
+				FD46E6231B83853800A983EE /* XIBTestLabelViewController.xib in Resources */,
+				405F762E1B68DB8000D3658D /* testImage3.png in Resources */,
+				FD46E6031B8361AD00A983EE /* XIBTestAwake0ViewController.xib in Resources */,
+				FD46E69B1B84DEF300A983EE /* XIBTestTableViewControllerViewController.xib in Resources */,
+				A7562A03F23077373F268456 /* preregister.txt in Resources */,
+				405F76291B68DB8000D3658D /* images.jpeg in Resources */,
+				FD46E6AD1B85CB9B00A983EE /* download.jpeg in Resources */,
+				FD46E6411B849B7A00A983EE /* XIBTestNotRGBAColorViewController.xib in Resources */,
+				FD46E60B1B8361AD00A983EE /* XIBTestButtonLabelDelegateViewController.xib in Resources */,
+				FD46E6071B8361AD00A983EE /* XIBTestAwake2ViewController.xib in Resources */,
+				FD46E6261B838DDA00A983EE /* XIBTestMainInterfaceViewController.xib in Resources */,
+				FD46E64D1B84A6E200A983EE /* image2.jpg in Resources */,
+				405F762C1B68DB8000D3658D /* testImage1.png in Resources */,
+				FD46E66B1B84CB0D00A983EE /* XIBTestSingleViewAppViewController.xib in Resources */,
+				FD46E6BC1B85DBE300A983EE /* XIBTestTextViewViewController.xib in Resources */,
+				FD46E6831B84D39E00A983EE /* first.png in Resources */,
+				FD46E5FA1B7E227200A983EE /* WebView.xib in Resources */,
+				405F761D1B68DB6100D3658D /* balloons.png in Resources */,
+				653F2CC438677182BD30ECD5 /* application.jar in Resources */,
+				FD46E6D31B85F36700A983EE /* ViewController0.xib in Resources */,
+				FD46E6A71B85C97000A983EE /* XIBTestTableViewLabelTexFieldUIImageViewController.xib in Resources */,
+				FD46E6BF1B85E73200A983EE /* XIBTestToolBarViewController.xib in Resources */,
+				FD46E6591B84AE6B00A983EE /* XIBTestPickerViewViewController.xib in Resources */,
+				FD46E6321B838FDF00A983EE /* MasterViewController_iPhone.xib in Resources */,
+				FD46E5FC1B7E227200A983EE /* XIBTestActivityIndicatorViewController.xib in Resources */,
+				FD46E63C1B84968900A983EE /* XIBTestNavigationControllerViewController.xib in Resources */,
+				FD46E6741B84CCE500A983EE /* XIBTestSwitchViewController.xib in Resources */,
+				FD46E6891B84D6B100A983EE /* XIBTestTabbedAppFirstViewController_iPad.xib in Resources */,
+				FD46E62C1B838FDF00A983EE /* DetailViewController_iPad.xib in Resources */,
+				405F762D1B68DB8000D3658D /* testImage2.png in Resources */,
+				FD46E6791B84D12F00A983EE /* XIBTestTabBarController0ViewController_iPhone.xib in Resources */,
+				FD46E6C31B85EBCC00A983EE /* XIBTestUserViewViewController.xib in Resources */,
+				FD46E6091B8361AD00A983EE /* XIBTestButtonLabel2ViewController.xib in Resources */,
+				FD46E6C91B85EF0900A983EE /* XIBTestViewController2Window.xib in Resources */,
+				FD46E6CE1B85F1B500A983EE /* XIBTestViewControllerWindow.xib in Resources */,
+				FD46E6A41B85C7AB00A983EE /* XIBTestTableViewLabelTexFieldViewController.xib in Resources */,
+				FD46E6301B838FDF00A983EE /* MasterViewController_iPad.xib in Resources */,
+				FD46E67D1B84D12F00A983EE /* XIBTestTabBarControllerWindow.xib in Resources */,
+				FD46E5F81B7E227200A983EE /* ButtonLabel1ViewController.xib in Resources */,
+				FD46E6C51B85EBCC00A983EE /* XIBTestViewColorBlueViewController.xib in Resources */,
+				FD46E6DA1B861CCD00A983EE /* XIBTestButtonLabel1ViewController.xib in Resources */,
+				405F762A1B68DB8000D3658D /* logo.jpeg in Resources */,
+				FD46E6D51B85F36700A983EE /* ViewController1.xib in Resources */,
+				FD46E64F1B84A6E200A983EE /* image3.jpg in Resources */,
+				FD46E67B1B84D12F00A983EE /* XIBTestTabBarControllerViewController_iPhone.xib in Resources */,
+				405F76331B68DBA200D3658D /* animImg in Resources */,
+				FD46E63E1B84968900A983EE /* XIBTestNavigationControllerViewTwoController.xib in Resources */,
+				FD46E66F1B84CC1F00A983EE /* XIBTestSlider_1ViewController.xib in Resources */,
+				FD46E6171B8375E000A983EE /* logo.jpg in Resources */,
+				023C965B2082DBC4D8F3B4AF /* classlist.txt in Resources */,
+				FD46E61D1B837D6F00A983EE /* images2.jpeg in Resources */,
+				FD46E6BA1B85DBE300A983EE /* XIBTestTextFieldViewController.xib in Resources */,
+				FD46E60E1B836DFB00A983EE /* XIBTestButtonViewController.xib in Resources */,
+				FD46E6621B84C6DB00A983EE /* XIBTestScrollViewViewController.xib in Resources */,
+				FD46E6B61B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationControllerViewController.xib in Resources */,
+				FD46E6951B84DB8300A983EE /* XIBTestTableViewCellViewController.xib in Resources */,
+				FD46E6681B84C94000A983EE /* XIBTestSegmentedControlViewController.xib in Resources */,
+				FD46E6561B84A7A600A983EE /* XIBTestPageViewController.xib in Resources */,
+				FD46E6711B84CC1F00A983EE /* XIBTestSliderViewController.xib in Resources */,
+				FD46E6B01B85D12000A983EE /* XIBTestTableViewViewController.xib in Resources */,
+				FD46E6141B83734200A983EE /* XIBTestDrawRectViewController.xib in Resources */,
+				FD46E6B41B85DB4000A983EE /* XIBTestTableViewSearchBarNavigationController2ViewController.xib in Resources */,
+				405F76311B68DB9400D3658D /* second.png in Resources */,
+				FD46E68D1B84D6B100A983EE /* XIBTestTabbedAppSecondViewController_iPad.xib in Resources */,
+				FD46E6651B84C83200A983EE /* XIBTestSearchViewController.xib in Resources */,
+				FD46E69E1B84E30F00A983EE /* XIBTestTableViewControllerWindow.xib in Resources */,
+				FD46E6D71B85F36700A983EE /* ViewController2.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8A9010F939AF3B04A856366 /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (MOE)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${SRCROOT}/\"\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n    if [ $? -ne 0 ]; then\n        echo \"Checking with 'which'\"\n        GRADLE_EXEC=$(which 'gradle')\n    fi\n    if [ \"$GRADLE_EXEC\" = \"\" ]; then\n        echo \"Falling back to '/usr/local/bin/gradle'\"\n        GRADLE_EXEC=/usr/local/bin/gradle\n    fi\n}\nfindGradle\n\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    export MOE_BUILD_SOURCE_SET=test\n    $GRADLE_EXEC --daemon moeXcodeInternal\nfi\n";
+		};
+		ED4232B93548D87BC7B2A75E /* Compile Sources (MOE) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Sources (MOE)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd \"${SRCROOT}/\"\n\n########################\n# Find Gradle\n########################\nfunction findGradle {\n\tCD=\"$PWD\"\n\twhile [ \"$CD\" != \"\" ]; do\n\t\techo \"Looking for gradlew in $CD\"\n\t\tif [ -x \"$CD/gradlew\" ]; then\n\t\t\tGRADLE_EXEC=$CD/gradlew\n\t\t\treturn 0\n\t\tfi\n\t\tCD=\"${CD%/*}\"\n\tdone\n    if [ $? -ne 0 ]; then\n        echo \"Checking with 'which'\"\n        GRADLE_EXEC=$(which 'gradle')\n    fi\n    if [ \"$GRADLE_EXEC\" = \"\" ]; then\n        echo \"Falling back to '/usr/local/bin/gradle'\"\n        GRADLE_EXEC=/usr/local/bin/gradle\n    fi\n}\nfindGradle\n\n########################\n# Execute Gradle build\n########################\nif [ -z \"$MOE_GRADLE_EXTERNAL_BUILD\" ]; then\n    $GRADLE_EXEC --daemon moeXcodeInternal\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20DB7FB5F587A152E47498DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2701396001B41FF351AE928C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BD7C5C396B57EDE5AA25D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBF0A91B35868FB60C359F9 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0554C12AF89F000BB9AE25A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SYMROOT = "build-xcode";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC3E1BEF07CC446FAD664EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2930400E89A7C4645E290885 /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/moe/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "xosrt_tests-Test/Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/moe/runtime/iphonesimulator";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "${MOE_OTHER_LDFLAGS_DEV}";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "${MOE_OTHER_LDFLAGS_SIM}";
+				PRODUCT_NAME = "xosrt_tests-Test";
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		85BC9F9434BF41F988A4858C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SYMROOT = "build-xcode";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99E893C4CA1ECB17339F50C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2930400E89A7C4645E290885 /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/moe/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = "xosrt_tests-Test/Info-Test.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/moe/runtime/iphonesimulator";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				"OTHER_LDFLAGS[sdk=iphoneos*]" = "$(MOE_OTHER_LDFLAGS_DEV)";
+				"OTHER_LDFLAGS[sdk=iphonesimulator*]" = "${MOE_OTHER_LDFLAGS_SIM}";
+				PRODUCT_NAME = "xosrt_tests-Test";
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		CE63858D4E95F96D9E449335 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DE6C58AE7C93E720DE393B /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/moe/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = xosrt_tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/moe/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = xosrt_tests;
+				STRIP_STYLE = "non-global";
+			};
+			name = Debug;
+		};
+		F69BA0213C31E1CCBF6D1A40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0DE6C58AE7C93E720DE393B /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/moe/runtime/$(PLATFORM_NAME)",
+				);
+				INFOPLIST_FILE = xosrt_tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks ${SRCROOT}/build/moe/runtime/iphonesimulator";
+				OTHER_LDFLAGS = "${MOE_OTHER_LDFLAGS}";
+				PRODUCT_NAME = xosrt_tests;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36996253E919D02C41D84792 /* Build configuration list for PBXNativeTarget "xosrt_tests-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99E893C4CA1ECB17339F50C5 /* Debug */,
+				7CC3E1BEF07CC446FAD664EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1927990E3F2E3492645911 /* Build configuration list for PBXNativeTarget "xosrt_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE63858D4E95F96D9E449335 /* Debug */,
+				F69BA0213C31E1CCBF6D1A40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C0C51DE338E1F53A2A28F3 /* Build configuration list for PBXProject "xosrt_tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85BC9F9434BF41F988A4858C /* Debug */,
+				0554C12AF89F000BB9AE25A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DA32AD4B492B66B88432E3E /* Project object */;
+}

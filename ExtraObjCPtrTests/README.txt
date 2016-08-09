@@ -1,0 +1,1 @@
+This project tests ObjC object pointer access with uninitialized ObjC runtime.

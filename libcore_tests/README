@@ -1,0 +1,31 @@
+ To run all tests you can run:
+  run.sh device (to run on device)
+  run.sh sim (to run on simulator iphone6)
+
+Script uses tools from ../../../../mdp_msdk-inde-java-xos-tools.
+
+Results you can find out in ./logs folder: 
+    log and csv file for each group of tests;
+    2 summary files: summaryExt.csv - for packages that customer can use
+                     summaryInt.csv - for internal packages
+
+*******************************************************************************
+
+Alternatively tests can be run from xcode by running libcore_tests-Test.app. 
+In this case no logs will be created (output in console), csv files can be found:
+ for device inside application bundle(how to get it described here, for example,
+    http://stackoverflow.com/questions/25937785/how-to-download-app-data-in-xcode-6)  
+  
+ for simulator in /tmp folder of your Mac.
+
+*******************************************************************************
+
+Several tests or groups can be run by running application libcore_tests-Test.app 
+with argument 
+-args <name of testclass1 or group1>,<name of testclass2 or group2>,…
+
+In this case no logs will be created (output in console), csv files can be found:
+ for device inside application bundle(how to get it described here, for example,
+    http://stackoverflow.com/questions/25937785/how-to-download-app-data-in-xcode-6)  
+  
+ for simulator in /tmp folder of your Mac.

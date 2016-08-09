@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "org.moe.natjdemo"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets.main {
+        jni.srcDirs = []
+    }
+
+    task buildNative(type: Exec, description: 'Compile JNI source via NDK') {
+        def ndkDir = android.ndkDirectory
+        commandLine "$ndkDir/ndk-build",
+                '-C', file('jni').absolutePath,
+                '-j', Runtime.runtime.availableProcessors(),
+                'all',
+                'NDK_DEBUG=1',
+                'NDK_APP_LIBS_OUT=../src/androidTest/jniLibs'
+    }
+
+    task cleanNative(type: Exec, description: 'Clean JNI object files') {
+        def ndkDir = android.ndkDirectory
+        commandLine "$ndkDir/ndk-build",
+                '-C', file('jni').absolutePath,
+                'clean'
+    }
+
+    task copyNatJNatives << {
+        for (arch in ["armeabi-v7a", "arm64-v8a", "x86", "x86_64"]) {
+            for (name in [["", "libnatj"], ["-c++", "libc++_shared"]]) {
+                Dependency dependency = project.dependencies.create("org.moe:natj-ndk:1.+:Release-$arch${name[0]}@so")
+                Configuration configuration = project.configurations.detachedConfiguration(dependency)
+
+                configuration.files.each { file ->
+                    copy {
+                        from file
+                        into android.sourceSets.androidTest.jniLibs.srcDirs.first().absolutePath + File.separator + arch
+
+                        rename { "${name[1]}.so" }
+                    }
+                }
+            }
+        }
+    }
+
+    tasks.copyNatJNatives.dependsOn buildNative
+
+    clean.dependsOn 'cleanNative'
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn copyNatJNatives
+    }
+}
+
+dependencies {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    androidTestCompile 'org.moe:natj-api:1.+'
+
+    androidTestCompile 'junit:junit:4.12'
+}

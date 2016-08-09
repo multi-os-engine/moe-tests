@@ -1,0 +1,104 @@
+/************************/
+/** Build Script Setup **/
+/************************/
+
+buildscript {
+    // Add central and local Maven repos
+    repositories {
+        mavenCentral()
+        jcenter()
+
+        maven {
+            url uri(System.getenv("MOE_HOME") + "/gradle")
+        }
+    }
+    dependencies {
+        // MOE plugin
+        classpath 'org.moe.gradle:moeGradlePlugin:1.1.+'
+    }
+}
+
+/*******************/
+/** Project Setup **/
+/*******************/
+
+// Apply plugins
+apply plugin: 'eclipse'
+apply plugin: 'moe'
+apply plugin: 'idea'
+
+// Set source and target to Java 8
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+String customRepo = System.getenv("MOE_MAVEN_ADDR")
+if ((customRepo == null) || (customRepo.length() == 0)) {
+    customRepo = System.getenv("MOE_HOME")
+}
+if ((customRepo != null) && (customRepo.length() > 0)) {
+    repositories {
+        maven {
+            url(customRepo)
+        }
+    }
+} else {
+    println "Could not find MOE_MAVEN_ADDR!"
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    test {
+        java {
+            srcDir "../../../aosp/libcore/jsr166-tests/src/test/java"
+            srcDir "../../../aosp/libcore/dalvik/src/test/java"
+            srcDir "../../../aosp/libcore/dex/src/test/java"
+            srcDir "../../../aosp/libcore/luni/src/test/java"
+            srcDir "../../../aosp/libcore/support/src/test/java"
+            srcDir "../../../aosp/libcore/harmony-tests/src/test/java"
+            srcDir "./src/test/java"
+            srcDir "../../../aosp/frameworks/base/test/java"
+        }
+        resources {
+            srcDir "../../../aosp/libcore/luni/src/test/resources"
+            srcDir "../../../aosp/external/apache-harmony/support/src/test/resources"
+            srcDir "../../../aosp/libcore/harmony-tests/src/test/resources"
+        }
+    }
+}
+
+// Exclude all files from Gradle's test runner
+test { exclude '**' }
+
+// Setup MOE
+moe {
+    xcode {
+        mainTarget = 'libcore_tests'
+        testTarget = 'libcore_tests-Test'
+        mainProductName = 'libcore_tests'
+        testProductName = 'libcore_tests-Test'
+
+        generateProject false
+        xcodeProjectDirPath ''
+    }
+}
+
+// Set dependencies
+dependencies {
+    testCompile('org.mockito:mockito-core:1.9.5') {
+        exclude group: 'org.hamcrest', module: 'hamcrest-core'
+    }
+}
+
+compileTestJava {
+    options.bootClasspath = moe.sdk.coreJarPath
+}
+
+// Setup Idea
+idea {
+    module {
+        jdkName='MOE SDK'
+    }
+}

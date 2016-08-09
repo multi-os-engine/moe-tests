@@ -1,0 +1,161 @@
+import libcore.icu.*;
+import libcore.java.io.*;
+import libcore.java.nio.charset.CharsetDecoderTest;
+import libcore.java.nio.charset.CharsetEncoderTest;
+import libcore.java.nio.charset.OldCharsetEncoderDecoderBufferTest;
+import libcore.java.text.NormalizerTest;
+import libcore.java.text.SimpleDateFormatTest;
+import libcore.java.util.OldAndroidLocaleTest;
+import org.junit.internal.TextListener;
+import org.junit.runner.JUnitCore;
+
+import org.junit.runner.Description;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+import org.junit.runner.notification.RunListener;
+
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.Locale;
+
+public class AllTestsRunner {
+    public class MessageIds {
+        
+        public static final String TEST_RUN_START = "%TESTC  ";
+        
+        public static final String TEST_DEFINE = "%TESTD  ";
+        
+        public static final String TEST_START = "%TESTS  ";
+        
+        public static final String TEST_END = "%TESTE  ";
+        
+        public static final String TEST_ERROR = "%ERROR  ";
+        
+        public static final String TEST_FAILED = "%FAILED ";
+        
+        public static final String TEST_IGNORED = "%IGNORED";
+        
+        public static final String TEST_RUN_END = "%RUNTIME";
+    }
+    
+    private static void sendMessage(String message) {
+        System.out.println(message);
+        System.out.flush();
+    }
+    
+    static class TestListener extends RunListener {
+        int count_all = 0;
+        int count_failed = 0;
+        int count_ignored = 0;
+        
+        public void reset(){
+            count_all=0;
+            count_ignored=0;
+            count_failed=0;
+        }
+        /**
+         * Called before any tests have been run.
+         */
+        public void testRunStarted(Description description) throws java.lang.Exception {
+            for (Description child : description.getChildren()) {
+                defineTest(child);
+            }
+            sendMessage(MessageIds.TEST_RUN_START + ":" + description.testCount());
+        }
+        
+        /**
+         * Called internally for defining tests.
+         */
+        private void defineTest(Description description) {
+            if (description.isTest()) {
+                sendMessage(MessageIds.TEST_DEFINE + ":" + description.getClassName() + "-"
+                            + description.getMethodName());
+                return;
+            }
+            if (description.getChildren() == null || description.getChildren().size() == 0) {
+                return;
+            }
+            for (Description child : description.getChildren()) {
+                defineTest(child);
+            }
+        }
+        
+        /**
+         *  Called when all tests have finished.
+         */
+        public void testRunFinished(Result result) throws java.lang.Exception {
+            sendMessage(MessageIds.TEST_RUN_END + ":" + result.getRunTime());
+            sendMessage(MessageIds.TEST_RUN_END + ":" + "all:" + count_all + " failed:"+count_failed+" ignored:"+count_ignored);
+            reset();
+        }
+        
+        /**
+         *  Called when an atomic test is about to be started.
+         */
+        public void testStarted(Description description) throws java.lang.Exception {
+            count_all++;
+            
+            sendMessage(MessageIds.TEST_START + ":" + description.getClassName() + "-"
+                        + description.getMethodName());
+        }
+        
+        /**
+         *  Called when an atomic test has finished, whether the test succeeds or fails.
+         */
+        public void testFinished(Description description) throws java.lang.Exception {
+            sendMessage(MessageIds.TEST_END + ":" + description.getClassName() + "-"
+                        + description.getMethodName());
+        }
+        
+        /**
+         *  Called when an atomic test fails.
+         */
+        public void testFailure(Failure failure) throws java.lang.Exception {
+            sendMessage(MessageIds.TEST_FAILED + ":" + failure.getTestHeader() + ":"
+                        + failure.getTrace());
+            count_failed++;
+        }
+        
+        /**
+         * Called when a test will not be run, generally because a test method is
+         * annotated with Ignore.
+         */
+        public void testIgnored(Description description) throws java.lang.Exception {
+            sendMessage(MessageIds.TEST_IGNORED + ":" + description.getClassName() + "-"
+                        + description.getMethodName());
+            count_ignored++;
+        }
+    };
+
+    
+   public static void main(String[] args) {
+       JUnitCore core = new JUnitCore();
+       core.addListener(new TestListener());
+       System.out.println("Tests start!");
+       System.out.println("NotJava starts");
+       core.run(JunitTestSuiteCoreNotJava.class);
+       System.out.println("NotJava finishes");
+       System.out.println("################################################################################");
+       System.out.println("DalvikJson starts");
+       core.run(JunitTestSuiteDalvikJson.class);
+       System.out.println("DalvikJson finishes");
+       System.out.println("################################################################################");
+       System.out.println("Harmony starts");
+       core.run(JunitTestSuiteHarmony.class);
+       System.out.println("Harmony finishes");
+       System.out.println("################################################################################");
+       System.out.println("Tests starts");
+       core.run(JunitTestSuiteTests.class);
+       System.out.println("Tests finishes");
+       System.out.println("################################################################################");
+       System.out.println("Java starts");
+       core.run(JunitTestSuiteJava.class);
+       System.out.println("Java finishes");
+       System.out.println("################################################################################");
+       System.out.println("JSR166 starts");
+       core.run(JunitTestSuiteJsr166.class);
+       System.out.println("JSR166 finishes");
+       System.out.println("################################################################################");
+    }
+}

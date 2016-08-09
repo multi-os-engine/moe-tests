@@ -1,0 +1,97 @@
+/*
+ * Copyright (C) 2015 Intel Corporation
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/************************/
+/** Build Script Setup **/
+/************************/
+
+buildscript {
+    // Add central and local Maven repos
+    repositories {
+        mavenLocal()
+        mavenCentral()
+
+        maven {
+            url uri(System.getenv("MOE_HOME") + "/gradle")
+        }
+    }
+    dependencies {
+        // MOE plugin
+        classpath 'org.moe.gradle:moeGradlePlugin:1.0.+'
+    }
+}
+
+/*******************/
+/** Project Setup **/
+/*******************/
+
+// Apply plugins
+apply plugin: 'eclipse'
+apply plugin: 'moe'
+apply plugin: 'idea'
+
+// Set source and target to Java 7
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+// Set maven repository
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+// Exclude all files from Gradle's test runner
+test { exclude '**' }
+
+// Setup MOE
+moe {
+    xcode.mainTarget = 'ExtraObjCPtrTests'
+    xcode.testTarget = 'ExtraObjCPtrTests-Test'
+    xcode.mainProductName = 'ExtraObjCPtrTests'
+    xcode.testProductName = 'ExtraObjCPtrTests-Test'
+}
+
+// Set dependencies
+dependencies {
+    // Compile with 'jar' files in the project's 'lib' directory
+    compile fileTree(dir: 'lib', include: '*.jar')
+}
+
+// Setup Eclipse
+eclipse {
+    classpath {
+        // Remove the default JRE container, MOE SDK will take its place
+        file.whenMerged { classpath ->
+            project.moe.fixJavaDocAndSources(classpath)
+            classpath.entries.removeAll { entry ->
+                entry.kind == 'con' && entry.path.startsWith('org.eclipse.jdt.launching.JRE_CONTAINER')
+            }
+        }
+    }
+
+    // Set MOE natures and build commands
+    project {
+        natures 'org.moe.mdt.appnature'
+        buildCommand 'org.moe.mdt.generalbuilder'
+    }
+}
+
+// Setup Idea
+idea {
+    module {
+        jdkName='MOE SDK'
+    }
+}

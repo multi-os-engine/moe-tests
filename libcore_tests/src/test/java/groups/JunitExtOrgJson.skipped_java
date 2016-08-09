@@ -1,0 +1,17 @@
+import libcore.io.*;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+
+    org.json.JSONArrayTest.class,
+    org.json.JSONObjectTest.class,
+    org.json.JSONStringerTest.class,
+    org.json.JSONTokenerTest.class,
+    org.json.ParsingTest.class,
+    org.json.SelfUseTest.class,
+
+})
+public class JunitExtOrgJson {
+} 
